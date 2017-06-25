@@ -1,1 +1,155 @@
-body{background: red;}
+@charset "utf-8";
+*{margin:0; padding:0;}
+html,body{font-size:12px; font-family:"simsun","arial"; color:#000; background:#FFF;}
+ul li,ol li{list-style:none;}
+a{ text-decoration:none;outline:none; blr:expression(this.onFocus=this.blur());}
+img{border:none;}
+/*清除浮动*/
+.clearfix:after { content:""; display:block; clear:both; height:0; line-height:0; visibility:hidden; }
+.clearfix { zoom:1; }
+.fl { float: left; }
+.fr { float: right; }
+
+.container {}
+.menu-bar {
+    border: 1px solid #333;
+}
+.menu-bar li a {
+    display:block;
+    width:80px;
+    font: normal 13px "Helvetica Neue", sans-serif;
+    line-height: 35px;
+    color: #333;
+    text-align: center;
+    border-right: 1px solid #333;
+}
+.menu-bar li a:hover {
+    color:#fb9337;
+    transition: color .2s;
+    -moz-transition: color .2s; /* Firefox 4 */
+    -webkit-transition: color .2s; /* Safari 和 Chrome */
+    -o-transition: color .2s; /* Opera */
+}
+.menu-bar li a i {
+    margin-right: 3px;
+}
+.left {
+    width: 200px;
+    border: 1px solid #333;
+}
+.left .page-structure-module h2,
+.left .column-module h2,
+.left .top-nav-module h2 {
+    font: normal 13px "Helvetica Neue", sans-serif;
+    line-height: 25px;
+    color: #333;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+.left .page-structure-module,
+.left .top-nav-module {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333;
+}
+.left .page-structure-module li,
+.left .top-nav-module li {
+    width: 50%;
+    margin-top: 10px;
+}
+.left .page-structure-module li a,
+.left .top-nav-module li a {
+    display: block;
+    width: 80px;
+    margin: 0 auto;
+    border: 1px solid #333;
+}
+.left .page-structure-module li a img,
+.left .top-nav-module li a img {
+    display: block;
+    margin: 10px auto;
+}
+.left .page-structure-module li a span,
+.left .top-nav-module li a span {
+    display: block;
+    margin: 0 auto;
+    line-height: 25px;
+    color: #333;
+    text-align: center;
+}
+.left .column-module .article-list h3,
+.left .column-module .link h3,
+.left .column-module .login h3 {
+    margin-left: 5px;
+    font: normal 13px "Helvetica Neue", sans-serif;
+    line-height: 25px;
+    color: #333;
+}
+.left .column-module .article-list-title,
+.left .column-module .link-title,
+.left .column-module .login-title {
+    border-bottom: 1px solid #333;
+}
+.left .column-module .article-list-box,
+.left .column-module .link-box,
+.left .column-module .login-box {
+    display: none;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333;
+}
+.left .column-module .article-list i,
+.left .column-module .link i,
+.left .column-module .login i {
+    margin-right: 5px;
+    padding: 0 5px;
+    font-size: 13px;
+    line-height: 25px;
+    color: #333;
+    cursor: pointer;
+}
+.left .column-module .article-list li,
+.left .column-module .link li,
+.left .column-module .login li {
+    width: 50%;
+    margin-top: 10px;
+}
+.left .column-module .article-list li a,
+.left .column-module .link li a,
+.left .column-module .login li a {
+    display: block;
+    width: 80px;
+    margin: 0 auto;
+    border: 1px solid #333;
+}
+.left .column-module .article-list li a img,
+.left .column-module .link li a img,
+.left .column-module .login li a img {
+    display: block;
+    margin: 10px auto;
+}
+.left .column-module .article-list li a span,
+.left .column-module .link li a span,
+.left .column-module .login li a span {
+    display: block;
+    margin: 0 auto;
+    line-height: 25px;
+    color: #333;
+    text-align: center;
+}
+.center {
+    position:absolute;
+    left: 200px;
+    right: 300px;
+    height: 500px;
+}
+.right {
+    width: 300px;
+    min-height: 500px;
+    border: 1px solid #333;
+}
+.right .size-and-position h2{
+    font: normal 13px "Helvetica Neue", sans-serif;
+    line-height: 25px;
+    color: #333;
+    text-align: center;
+    border-bottom: 1px solid #333;    
+}
