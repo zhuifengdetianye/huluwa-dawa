@@ -428,15 +428,23 @@ input::-webkit-input-placeholder{
 .center {
     position:absolute;
     left: 200px;
-    right: 300px;
+    right: 320px;
     height: 500px;
 }
 .right {
-    width: 300px;
+    width: 320px;
     min-height: 500px;
     border: 1px solid #333;
     font-family: "Helvetica Neue", sans-serif;
 }
+.right .style-operation-box {
+    max-height: 300px;
+    overflow-y: auto;
+}
+.right .size-and-position {
+    border-right: 1px solid #333;
+}
+.right .style-operation > h2,
 .right .size-and-position h2,
 .right .background h2,
 .right .shadow h2,
@@ -446,7 +454,8 @@ input::-webkit-input-placeholder{
     line-height: 25px;
     color: #333;
     text-align: center;
-    border-bottom: 1px solid #333;    
+    border-bottom: 1px solid #333; 
+    background: #aaa;   
 }
 .right .size-and-position .size-and-position-size,
 .right .size-and-position .size-and-position-align,
@@ -527,12 +536,14 @@ input::-webkit-input-placeholder{
 .right .style-abstract,
 .right .edit-css-js {
     border-bottom: 1px solid #333;
+    border-right: 1px solid #333;
 }
 .right .background > div,
 .right .shadow > div,
 .right .border > div,
 .right .style-abstract > div {
     line-height: 35px;
+
 }
 .right .background  label,
 .right .shadow label,
@@ -583,6 +594,16 @@ input::-webkit-input-placeholder{
     margin: 0 auto;
     margin-top: 15px;
 }
+.right .style-abstract > div div.clearfix{
+    border-right: 1px solid #333;
+}
+.right .style-abstract-box {
+    max-height: 200px;
+    overflow-y: auto;
+}
+.right .style-abstract h2 {
+    border-top: 1px solid #333;
+}
 .right .style-abstract .select {
     width: 140px;
 }
@@ -592,5 +613,9 @@ input::-webkit-input-placeholder{
 }
 .right .edit-css-js .edit-js{
     margin-left: 40px;
+}
+.center iframe{
+    width: 100%;
+    height: 500px;
 }
 
